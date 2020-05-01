@@ -30,7 +30,7 @@ class App extends Component {
     this.toggle();
     
     try {
-      const response = await axios.post('http://youta-api.ngrok.io/starter-project/', { 
+      const response = await axios.post('https://youta-api.ngrok.io/starter-project/', { 
         timestamp: new Date().getTime(),
         username: 'berniedev007@gmail.com',
         domain: this.state.domain,
