@@ -43,6 +43,9 @@ app.style.display = "none";
 let modal = document.querySelector(".extModal");
 modal.style.display = "none";
 
+let backdrop = document.querySelector(".modal-backdrop");
+backdrop.style.opacity = 0;
+
 chrome.runtime.onMessage.addListener(
    function(request, sender, sendResponse) {
       if( request.message === "clicked_browser_action") {
